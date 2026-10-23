@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tre kvällar i november | The Week</title>
+<meta name="description" content="Tre kvällar i november 2026, kl 18.30–20.30. En grupperfarenhet i The Weeks anda. Anmäl dig.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --neutral:#151d1e;
+    --neutral-80:#393e41;
+    --neutral-60:#737778;
+    --neutral-20:#d1d1d1;
+    --neutral-05:#f1f1f4;
+    --primary:#ffa914;
+    --primary-light:#ffe4ad;
+    --primary-dark:#7a2c00;
+    --primary-background:#fff7e5;
+    --primary-alt:#db6f39;
+    --accent-dark:#2f4d9c;
+    --accent-light:#daf8fb;
+    --radius:36px;
+    --page-max:1200px;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    background:#fff;
+    color:var(--neutral);
+    font-family:Lato,sans-serif;
+    font-size:16px;
+    line-height:1.5em;
+  }
+
+  h1,h2,h3,.inter{
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    color:var(--primary-dark);
+    margin:0;
+  }
+
+  a{color:var(--accent-dark);}
+
+  .container{
+    width:100%;
+    max-width:var(--page-max);
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* ---------- Top banner ---------- */
+  .banner{
+    background:var(--accent-dark);
+    color:#fff;
+    font-family:Inter,sans-serif;
+    font-weight:600;
+    font-size:15px;
+    text-align:center;
+    padding:10px 16px;
+  }
+  .banner a{color:#fff;}
+
+  /* ---------- Header ---------- */
+  .header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    padding:20px 0;
+    flex-wrap:wrap;
+  }
+  .logo{
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    font-size:22px;
+    letter-spacing:-.5px;
+    color:var(--primary-dark);
+    text-decoration:none;
+  }
+  .logo span{color:var(--primary-alt);}
+  .header-link{
+    font-family:Inter,sans-serif;
+    font-weight:600;
+    font-size:15px;
+    text-decoration:none;
+    color:var(--neutral-80);
+    border-bottom:2px solid var(--primary);
+    padding-bottom:2px;
+  }
+  .header-link:hover{color:var(--primary-dark);}
+
+  /* ---------- Hero ---------- */
+  .hero-wrap{padding:0 8px;}
+  .hero{
+    background:var(--primary-background);
+    border-radius:var(--radius);
+    padding:64px 56px;
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:48px;
+    align-items:center;
+  }
+  .eyebrow{
+    display:inline-block;
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    font-size:14px;
+    letter-spacing:1.6px;
+    text-transform:uppercase;
+    color:var(--accent-dark);
+    background:#fff;
+    border-radius:100px;
+    padding:8px 16px;
+    margin-bottom:24px;
+  }
+  .hero h1{
+    font-size:clamp(40px,6vw,64px);
+    line-height:1em;
+    margin-bottom:20px;
+  }
+  .hero .subtitle{
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    font-size:clamp(22px,3vw,32px);
+    line-height:1.15em;
+    color:var(--primary-dark);
+    margin-bottom:24px;
+  }
+  .hero p.ingress{
+    font-size:20px;
+    line-height:1.4em;
+    color:var(--neutral-80);
+    margin:0 0 32px;
+    max-width:34em;
+  }
+  .cta-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    height:56px;
+    padding:0 24px;
+    border-radius:300px;
+    font-family:Inter,sans-serif;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:1.6px;
+    text-transform:uppercase;
+    text-decoration:none;
+    transition:background-color .15s,color .15s;
+  }
+  .btn-orange{background:var(--primary);color:var(--primary-dark);}
+  .btn-orange:hover{background:var(--primary-light);}
+  .btn-white{background:#fff;color:var(--neutral-80);}
+  .btn-white:hover{background:var(--neutral-05);}
+  .btn svg{flex:none;}
+
+  /* ---------- Date card ---------- */
+  .date-card{
+    background:#fff;
+    border-radius:var(--radius);
+    padding:32px;
+  }
+  .date-card h2{
+    font-size:24px;
+    margin-bottom:8px;
+  }
+  .date-card .hint{
+    font-size:15px;
+    color:var(--neutral-60);
+    margin:0 0 20px;
+  }
+  .date-row{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:16px;
+    padding:16px 0;
+    border-top:1px solid var(--neutral-20);
+  }
+  .date-row:last-child{border-bottom:1px solid var(--neutral-20);}
+  .date-day{
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    font-size:22px;
+    color:var(--primary-dark);
+  }
+  .date-meta{
+    font-family:Inter,sans-serif;
+    font-weight:600;
+    font-size:15px;
+    color:var(--neutral-80);
+    text-align:right;
+  }
+  .date-place{
+    margin-top:20px;
+    font-size:15px;
+    color:var(--neutral-80);
+  }
+  .date-place strong{
+    font-family:Inter,sans-serif;
+    display:block;
+    color:var(--accent-dark);
+    font-size:14px;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    margin-bottom:4px;
+  }
+
+  /* ---------- KPI strip ---------- */
+  .kpis{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:48px;
+    padding:56px 24px;
+    text-align:center;
+  }
+  .kpi-num{
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    font-size:48px;
+    line-height:1em;
+    letter-spacing:-1.9px;
+    color:var(--primary-alt);
+  }
+  .kpi-num.blue{color:var(--accent-dark);}
+  .kpi-label{
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    font-size:18px;
+    color:var(--neutral);
+    margin-top:8px;
+  }
+
+  /* ---------- Blue section ---------- */
+  .section-blue{
+    background:var(--accent-light);
+    border-radius:40px;
+    padding:64px 56px;
+    margin:0 8px;
+  }
+  .section-head{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 40px;
+  }
+  .section-head h2{
+    font-size:clamp(28px,4vw,40px);
+    line-height:1.1em;
+    margin-bottom:16px;
+  }
+  .section-head p{
+    font-size:20px;
+    line-height:1.4em;
+    color:var(--neutral-80);
+    margin:0;
+  }
+  .cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+  }
+  .card{
+    background:#fff;
+    border-radius:24px;
+    padding:32px;
+  }
+  .card .badge{
+    display:inline-block;
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    font-size:13px;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    color:#fff;
+    background:var(--accent-dark);
+    border-radius:100px;
+    padding:6px 14px;
+    margin-bottom:16px;
+  }
+  .card h3{
+    font-size:24px;
+    line-height:1.2em;
+    color:var(--accent-dark);
+    margin-bottom:12px;
+  }
+  .card p{
+    margin:0;
+    color:var(--neutral-80);
+    font-size:16px;
+    line-height:1.5em;
+  }
+  .card .when{
+    margin-top:16px;
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    font-size:15px;
+    color:var(--primary-dark);
+  }
+
+  /* ---------- Info section ---------- */
+  .section-info{padding:72px 0;}
+  .info-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:48px;
+    align-items:start;
+  }
+  .info-grid h2{
+    font-size:clamp(28px,4vw,40px);
+    line-height:1.1em;
+    margin-bottom:20px;
+  }
+  .info-grid p{
+    font-size:18px;
+    line-height:1.5em;
+    color:var(--neutral-80);
+    margin:0 0 16px;
+  }
+  .facts{
+    background:var(--primary-background);
+    border-radius:var(--radius);
+    padding:32px;
+  }
+  .fact{
+    display:flex;
+    gap:16px;
+    padding:16px 0;
+    border-bottom:1px solid var(--primary-light);
+  }
+  .fact:last-child{border-bottom:0;padding-bottom:0;}
+  .fact:first-child{padding-top:0;}
+  .fact-k{
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    font-size:14px;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    color:var(--primary-alt);
+    min-width:96px;
+  }
+  .fact-v{
+    font-family:Inter,sans-serif;
+    font-weight:600;
+    font-size:17px;
+    color:var(--neutral);
+  }
+  .fact-v a{color:var(--accent-dark);}
+
+  /* ---------- Contact ---------- */
+  .contact{
+    background:var(--primary-dark);
+    border-radius:40px;
+    margin:0 8px 8px;
+    padding:64px 56px;
+    text-align:center;
+    color:#fff;
+  }
+  .contact h2{
+    color:#fff;
+    font-size:clamp(28px,4vw,40px);
+    line-height:1.1em;
+    margin-bottom:16px;
+  }
+  .contact p{
+    color:var(--primary-light);
+    font-size:20px;
+    line-height:1.4em;
+    max-width:640px;
+    margin:0 auto 32px;
+  }
+  .contact .mail{
+    font-family:Inter,sans-serif;
+    font-weight:800;
+    font-size:clamp(20px,3.2vw,32px);
+    color:#fff;
+    text-decoration:none;
+    border-bottom:4px solid var(--primary);
+    word-break:break-all;
+  }
+  .contact .mail:hover{color:var(--primary-light);}
+
+  /* ---------- Footer ---------- */
+  .footer{
+    padding:40px 0 56px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    align-items:center;
+    justify-content:space-between;
+    font-size:15px;
+    color:var(--neutral-60);
+  }
+  .footer a{color:var(--accent-dark);font-weight:700;}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:991px){
+    .hero{
+      grid-template-columns:1fr;
+      padding:48px 32px;
+      gap:32px;
+    }
+    .section-blue{padding:48px 32px;}
+    .cards{grid-template-columns:1fr;}
+    .info-grid{grid-template-columns:1fr;gap:32px;}
+    .contact{padding:48px 32px;}
+  }
+
+  @media (max-width:600px){
+    .hero{padding:40px 24px;border-radius:28px;}
+    .hero p.ingress{font-size:18px;}
+    .section-blue{border-radius:28px;padding:40px 20px;}
+    .contact{border-radius:28px;padding:40px 24px;}
+    .cta-group{flex-direction:column;align-items:stretch;}
+    .btn{justify-content:center;}
+    .kpis{gap:32px;padding:40px 16px;}
+    .kpi-num{font-size:40px;}
+    .date-card{padding:24px;}
+    .date-row{flex-direction:column;gap:4px;}
+    .date-meta{text-align:left;}
+    .facts{padding:24px;}
+    .fact{flex-direction:column;gap:4px;}
+    .footer{flex-direction:column;align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<div class="banner">
+  Anmälan är öppen – begränsat antal platser. Anmäl dig nu.
+</div>
+
+<header class="container header">
+  <a class="logo" href="#">the week<span>.</span> november. gbg.</a>
+  <a class="header-link" href="https://theweek.ooo" target="_blank" rel="noopener">Om theweek.ooo &rarr;</a>
+</header>
+
+<section class="hero-wrap">
+  <div class="hero">
+    <div>
+      <span class="eyebrow">17, 23 &amp; 24 november 2026</span>
+      <h1>Tre kvällar i november.</h1>
+      <div class="subtitle">Tillsammans, för att förstå vår tids definierande kris.</div>
+      <p class="ingress">Miljön bryts ned och klimatet förändras snabbt. Under tre kvällar samlas vi i en liten grupp för att se vad som är på gång – och vad vi själva kan göra. Film och samtal; inga power-points eller föreläsningar.</p>
+      <div class="cta-group">
+        <a class="btn btn-orange" href="mailto:olof.bjarnason@gmail.com?subject=Anm%C3%A4lan%20november%202026">
+          Anmäl dig
+          <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.7197 6.22922C14.0126 5.92359 14.4874 5.92359 14.7803 6.22922L19.7803 11.4466C20.0732 11.7522 20.0732 12.2478 19.7803 12.5534L14.7803 17.7708C14.4874 18.0764 14.0126 18.0764 13.7197 17.7708C13.4268 17.4652 13.4268 16.9696 13.7197 16.664L17.231 13L6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11L17.231 11L13.7197 7.336C13.4268 7.03037 13.4268 6.53485 13.7197 6.22922Z" fill="#7A2C00"/></svg>
+        </a>
+        <a class="btn btn-white" href="https://theweek.ooo" target="_blank" rel="noopener">Läs mer om The Week</a>
+      </div>
+    </div>
+
+    <div class="date-card">
+      <h2>Spara i kalendern</h2>
+      <p class="hint">Alla tre kvällarna ingår</p>
+
+      <div class="date-row">
+        <div class="date-day">Tis 17 nov</div>
+        <div class="date-meta">Kväll 1<br>18.30–20.30</div>
+      </div>
+      <div class="date-row">
+        <div class="date-day">Mån 23 nov</div>
+        <div class="date-meta">Kväll 2<br>18.30–20.30</div>
+      </div>
+      <div class="date-row">
+        <div class="date-day">Tis 24 nov</div>
+        <div class="date-meta">Kväll 3<br>18.30–20.30</div>
+      </div>
+
+      <div class="date-place">
+        <strong>Plats</strong>
+        Centrala Göteborg. Exakt adress meddelas vid anmälan.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="kpis">
+  <div>
+    <div class="kpi-num">3</div>
+    <div class="kpi-label">kvällar</div>
+  </div>
+  <div>
+    <div class="kpi-num blue">18.30–20.30</div>
+    <div class="kpi-label">varje gång</div>
+  </div>
+  <div>
+    <div class="kpi-num">2026</div>
+    <div class="kpi-label">november</div>
+  </div>
+</section>
+
+<section class="section-blue">
+  <div class="section-head">
+    <h2>Så går det till</h2>
+    <p>Vi ses tre kvällar. Varje kväll tittar vi på ett filmavsnitt och samtalar sedan i 30 minuter, eller längre om ni vill, för att få grepp om det hela.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <span class="badge">Kväll 1</span>
+      <h3>Vi ser det som kommer</h3>
+      <p>Första kvällen är den tunga: vi tittar rakt på det som är på väg att hända, utan att blunda. Därefter pratar vi om det – i lugn och ro, tillsammans.</p>
+      <div class="when">Tisdag 17 november, 18.30–20.30</div>
+    </div>
+
+    <div class="card">
+      <span class="badge">Kväll 2</span>
+      <h3>Vi skapar mening tillsammans</h3>
+      <p>Andra kvällen handlar om att förstå sambanden. Vad är verkligt, vad är osäkert, och vad betyder det för oss och dem vi bryr oss om?</p>
+      <div class="when">Måndag 23 november, 18.30–20.30</div>
+    </div>
+
+    <div class="card">
+      <span class="badge">Kväll 3</span>
+      <h3>Vi bestämmer oss</h3>
+      <p>Sista kvällen lyfter oss upp: vad kan vi realistiskt göra, tillsammans? Det är här samtalet blir inspirerande och gruppen känner sig starkare.</p>
+      <div class="when">Tisdag 24 november, 18.30–20.30</div>
+    </div>
+  </div>
+</section>
+
+<section class="section-info">
+  <div class="container info-grid">
+    <div>
+      <h2>En grupperfarenhet, inte en föreläsning</h2>
+      <p>Du kommer som du är, tillsammans med ett litet antal andra. Det finns inga svar att utanpålära – samtalet är själva hjärtat i upplevelsen, och många grupper känner att de kommer varandra närmare.</p>
+      <p>Inga isbjörnar, inga extrema nyhetsrubriker. Det handlar om oss, om de närmaste åren och om vad vi faktiskt kan göra.</p>
+      <p>The Week drivs av en ideell organisation och används idag av tusentals grupper i över 40 länder.</p>
+    </div>
+
+    <div class="facts">
+      <div class="fact">
+        <div class="fact-k">Datum</div>
+        <div class="fact-v">17, 23 och 24 november 2026</div>
+      </div>
+      <div class="fact">
+        <div class="fact-k">Tid</div>
+        <div class="fact-v">Kl 18.30–20.30 alla tre kvällarna</div>
+      </div>
+      <div class="fact">
+        <div class="fact-k">Plats</div>
+        <div class="fact-v">Meddelas vid anmälan</div>
+      </div>
+      <div class="fact">
+        <div class="fact-k">Kostnad</div>
+        <div class="fact-v">Gratis</div>
+      </div>
+      <div class="fact">
+        <div class="fact-k">Anmälan</div>
+        <div class="fact-v"><a href="mailto:olof.bjarnason@gmail.com">olof.bjarnason@gmail.com</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Intresserad?</h2>
+  <p>Skicka ett mejl så berättar jag mer om The Week och om du undrar över något. Välkommen!</p>
+  <a class="mail" href="mailto:olof.bjarnason@gmail.com?subject=Intresse%20november%202026">olof.bjarnason@gmail.com</a>
+</section>
+
+<footer class="container footer">
+  <div>Arrangör: The Week Göteborg</div>
+  <div>Inspiration och format från <a href="https://theweek.ooo" target="_blank" rel="noopener">theweek.ooo</a></div>
+</footer>
+
+</body>
+</html>
